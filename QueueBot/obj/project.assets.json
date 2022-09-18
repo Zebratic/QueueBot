@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net6.0-windows7.0": {
       "Discord.Net/3.6.1": {
         "type": "package",
         "dependencies": {
@@ -19,25 +19,33 @@
           "Discord.Net.Core": "3.6.1"
         },
         "compile": {
-          "lib/netstandard2.1/Discord.Net.Commands.dll": {}
+          "lib/net6.0/Discord.Net.Commands.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Discord.Net.Commands.dll": {}
+          "lib/net6.0/Discord.Net.Commands.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Discord.Net.Core/3.6.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "System.Collections.Immutable": "1.3.1",
+          "System.Collections.Immutable": "5.0.0",
           "System.Interactive.Async": "5.0.0",
           "System.ValueTuple": "4.5.0"
         },
         "compile": {
-          "lib/netstandard2.1/Discord.Net.Core.dll": {}
+          "lib/net6.0/Discord.Net.Core.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Discord.Net.Core.dll": {}
+          "lib/net6.0/Discord.Net.Core.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Discord.Net.Interactions/3.6.1": {
@@ -51,10 +59,14 @@
           "System.Reactive": "5.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Discord.Net.Interactions.dll": {}
+          "lib/net6.0/Discord.Net.Interactions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Discord.Net.Interactions.dll": {}
+          "lib/net6.0/Discord.Net.Interactions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Discord.Net.Rest/3.6.1": {
@@ -63,10 +75,14 @@
           "Discord.Net.Core": "3.6.1"
         },
         "compile": {
-          "lib/netstandard2.1/Discord.Net.Rest.dll": {}
+          "lib/net6.0/Discord.Net.Rest.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Discord.Net.Rest.dll": {}
+          "lib/net6.0/Discord.Net.Rest.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Discord.Net.Webhook/3.6.1": {
@@ -76,10 +92,14 @@
           "Discord.Net.Rest": "3.6.1"
         },
         "compile": {
-          "lib/netstandard2.1/Discord.Net.Webhook.dll": {}
+          "lib/net6.0/Discord.Net.Webhook.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Discord.Net.Webhook.dll": {}
+          "lib/net6.0/Discord.Net.Webhook.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Discord.Net.WebSocket/3.6.1": {
@@ -89,37 +109,71 @@
           "Discord.Net.Rest": "3.6.1"
         },
         "compile": {
-          "lib/netstandard2.1/Discord.Net.WebSocket.dll": {}
+          "lib/net6.0/Discord.Net.WebSocket.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Discord.Net.WebSocket.dll": {}
+          "lib/net6.0/Discord.Net.WebSocket.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/net5.0/WebDriver.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/WebDriver.dll": {}
+        }
+      },
+      "Selenium.WebDriver.ChromeDriver/105.0.5195.5200": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
       "System.Collections.Immutable/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Interactive.Async/5.0.0": {
@@ -128,31 +182,43 @@
           "System.Linq.Async": "5.0.0"
         },
         "compile": {
-          "lib/netcoreapp3.1/System.Interactive.Async.dll": {}
+          "lib/netcoreapp3.1/System.Interactive.Async.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Interactive.Async.dll": {}
+          "lib/netcoreapp3.1/System.Interactive.Async.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Linq.Async/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp3.1/System.Linq.Async.dll": {}
+          "ref/netcoreapp3.1/System.Linq.Async.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Linq.Async.dll": {}
+          "lib/netcoreapp3.1/System.Linq.Async.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Reactive/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.1/_._": {}
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.1/_._": {}
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/System.Reactive.targets": {}
+          "buildTransitive/net5.0/_._": {}
         }
       },
       "System.ValueTuple/4.5.0": {
@@ -349,6 +415,44 @@
         "packageIcon.png"
       ]
     },
+    "Selenium.WebDriver/4.4.0": {
+      "sha512": "gg/fFUW+SQEdOMaZvkKSau6m4xbMG2qBW6cCW6nGW1CtO0coA8OLYpHcQLpsKcc6q68i/Uq1wjtiVfiNXykJUQ==",
+      "type": "package",
+      "path": "selenium.webdriver/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net45/WebDriver.dll",
+        "lib/net46/WebDriver.dll",
+        "lib/net47/WebDriver.dll",
+        "lib/net48/WebDriver.dll",
+        "lib/net5.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.1/WebDriver.dll",
+        "selenium.webdriver.4.4.0.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.ChromeDriver/105.0.5195.5200": {
+      "sha512": "/OV++ThfRp7YcWilvbbfeZQDwtlQr0Gbkczxg+ll1EvTfxI02yjK52DSNyy39NkgsD4/643PZ2icAdTBSylzAw==",
+      "type": "package",
+      "path": "selenium.webdriver.chromedriver/105.0.5195.5200",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/DefinePropertiesChromeDriver.targets",
+        "build/Selenium.WebDriver.ChromeDriver.targets",
+        "driver/linux64/chromedriver",
+        "driver/mac64/chromedriver",
+        "driver/mac64arm/chromedriver",
+        "driver/win32/chromedriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.chromedriver.105.0.5195.5200.nupkg.sha512",
+        "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
     "System.Collections.Immutable/5.0.0": {
       "sha512": "FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
       "type": "package",
@@ -496,36 +600,44 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
-      "Discord.Net >= 3.6.1"
+    "net6.0-windows7.0": [
+      "Discord.Net >= 3.6.1",
+      "Selenium.WebDriver >= 4.4.0",
+      "Selenium.WebDriver.ChromeDriver >= 105.0.5195.5200"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Disabled\\.nuget\\packages\\": {}
+    "C:\\Users\\alex7\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Disabled\\source\\repos\\QueueBot windows src\\QueueBot\\QueueBot.csproj",
+      "projectUniqueName": "D:\\Work\\QueueBot\\QueueBot\\QueueBot.csproj",
       "projectName": "QueueBot",
-      "projectPath": "C:\\Users\\Disabled\\source\\repos\\QueueBot windows src\\QueueBot\\QueueBot.csproj",
-      "packagesPath": "C:\\Users\\Disabled\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Disabled\\source\\repos\\QueueBot windows src\\QueueBot\\obj\\",
+      "projectPath": "D:\\Work\\QueueBot\\QueueBot\\QueueBot.csproj",
+      "packagesPath": "C:\\Users\\alex7\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\QueueBot\\QueueBot\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Disabled\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alex7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
           "projectReferences": {}
         }
       },
@@ -536,12 +648,20 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
         "dependencies": {
           "Discord.Net": {
             "target": "Package",
             "version": "[3.6.1, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[4.4.0, )"
+          },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[105.0.5195.5200, )"
           }
         },
         "imports": [
@@ -550,7 +670,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -559,7 +680,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

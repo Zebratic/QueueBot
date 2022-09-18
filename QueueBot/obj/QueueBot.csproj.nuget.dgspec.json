@@ -1,32 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Disabled\\source\\repos\\QueueBot windows src\\QueueBot\\QueueBot.csproj": {}
+    "D:\\Work\\QueueBot\\QueueBot\\QueueBot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Disabled\\source\\repos\\QueueBot windows src\\QueueBot\\QueueBot.csproj": {
+    "D:\\Work\\QueueBot\\QueueBot\\QueueBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Disabled\\source\\repos\\QueueBot windows src\\QueueBot\\QueueBot.csproj",
+        "projectUniqueName": "D:\\Work\\QueueBot\\QueueBot\\QueueBot.csproj",
         "projectName": "QueueBot",
-        "projectPath": "C:\\Users\\Disabled\\source\\repos\\QueueBot windows src\\QueueBot\\QueueBot.csproj",
-        "packagesPath": "C:\\Users\\Disabled\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Disabled\\source\\repos\\QueueBot windows src\\QueueBot\\obj\\",
+        "projectPath": "D:\\Work\\QueueBot\\QueueBot\\QueueBot.csproj",
+        "packagesPath": "C:\\Users\\alex7\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\QueueBot\\QueueBot\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Disabled\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alex7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
             "projectReferences": {}
           }
         },
@@ -37,12 +42,20 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
           "dependencies": {
             "Discord.Net": {
               "target": "Package",
               "version": "[3.6.1, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[105.0.5195.5200, )"
             }
           },
           "imports": [
@@ -51,7 +64,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -60,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

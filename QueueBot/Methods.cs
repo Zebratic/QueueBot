@@ -1,6 +1,4 @@
-﻿using Discord;
-using Discord.Commands;
-using Discord.WebSocket;
+﻿using Discord.Commands;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -9,8 +7,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QueueBot
 {
@@ -70,7 +66,7 @@ namespace QueueBot
                 int b = 1;
                 for (int i = 0; i < amount; i++)
                 {
-                    
+
                     File.AppendAllText(queuePath, token + Environment.NewLine);
                     Console.WriteLine($"Added token {b} times");
                     b++;
@@ -129,7 +125,7 @@ namespace QueueBot
             {
                 Console.WriteLine("Failed to open velocity");
             }
-            
+
         }
 
         public static List<string> printQueue()
@@ -151,12 +147,7 @@ namespace QueueBot
                     request.ContentType = "application/json";
                     request.Method = WebRequestMethods.Http.Get;
                     request.Timeout = 20000;
-                    request.Headers = new WebHeaderCollection()
-                {
-                       {
-                        "Authorization", token
-                        }
-                };
+                    request.Headers = new WebHeaderCollection() { { "Authorization", token } };
 
                     WebResponse response = request.GetResponse();
                     Stream responseStream = response.GetResponseStream();
@@ -166,22 +157,14 @@ namespace QueueBot
                     dynamic json = JsonConvert.DeserializeObject(result);
                     discordID = json.id;
                 }
-                catch (Exception)
-                {
-
-                }
+                catch { }
 
 
                 int i = 0;
                 foreach (string line in allTokensRaw)
-                {
                     if (line == token)
-                    {
                         i++;
-                    }
-                    else
-                    { }
-                }
+
                 queueList.Add($"User: <@{discordID}>  -  Snipes Remaining: {i}");
             }
 
@@ -199,9 +182,6 @@ namespace QueueBot
         {
             string link = File.ReadAllLines($"{Environment.CurrentDirectory}\\config\\webhookLink.txt")[0];
             Utils.sendWebHook(link, "NITRO CLAIMED! :gift:", "DetectionBot");
-
         }
-
     }
-    
 }
